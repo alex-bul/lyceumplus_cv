@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Резюме Бульбенков Александр">
+    <title>Бульбенков Александр</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <script src="./script.js"></script>  
+    <nav>
+        <div id="burger-menu" onclick="triggerMenu()">
+            <span></span>
+
+        </div>
+        <div id="menu">
+            <ul id="menu-list">
+                <li><a id="link_aboutme">Обо мне</a></li>
+                <li><a id="link_project">Проекты</a></li>
+                <li><a id="link_contacts">Контакты</a></li>
+                <li class="theme-button" onclick="changeMode()"><a id="theme">Тема: <span class="theme-title">тёмная</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="main-block">
+            <div class="block">
+                <a id="aboutme"></a>
+                <h1>Здравствуйте!</h1>
+                <p>Меня зовут Бульбенков Александр Алексеевич, мне 16 лет, учусь в 10 классе МАОУ гимназии №22, живу в Калининграде. Увлекаюсь промышленным программированием,
+                     предпринимательством, читаю книги. (Ссылка на GitHub находится в разделе <a id="link_contacts2"><u><b>Контакты</b></u></a>)</p>
+                <p>У меня уже был опыт бекенд-разработки на Node JS. 
+                    Во время обучения я использовал много гайдов и действовал методом "тыка" при использовании новых технологий, поэтому чувствую, что мне не хватает системных, 
+                    структурированных знаний. Надеюсь, что Лицей++ поможет с этим :)</p>
+            </div>
+            <img class="my-photo" src="src/me.jpg" alt='Фото автора'/>
+        </section>
+        <section id="projects" class="projects-block">
+            <h1>Проекты</h1>
+            <div class="project-list">
+                <a class="a-no-underline" target="_blank" href="https://vk.com/app7937913">
+                    <div class="project">
+                        <img class="project-image" src="./src/gachi.png" />
+                        <h2>Гачи</h2>
+                        <p class="project-description">Игра на платформе VK Mini Apps. <br/><b>Технологии:</b> React, Node JS, MongoDB, Express</p>
+                    </div>
+                </a>
+                <a class="a-no-underline" target="_blank" href="https://vk.com/text_tools">
+                    <div class="project">
+                        <img class="project-image" src="./src/texttools.jpg" />
+                        <h2>TextTools</h2>
+                        <p class="project-description">Приложение-инструмент на платформе VK Mini Apps для обратки текста. <br/><b>Технологии:</b> React</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="contacts" class="contacts-block">
+            <h1>Контакты</h1>
+            <div class="contact_list">
+                <a target="_blank" href="https://github.com/alex-bul"><img class="contact" src="src/GitHub.png" alt='GitHub' /></a>
+                <a target="_blank" href="https://vk.com/a.bulbenkov"><img class="contact" src="src/VK.png" alt='VK'/></a>
+                <a target="_blank" href="https://t.me/alexbul0"><img class="contact" src="src/Telegram.png" alt='Telegram'/></a>
+            </div>
+        </section>
+
+    </main>
+ </body>
+</html>
