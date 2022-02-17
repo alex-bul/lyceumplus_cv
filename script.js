@@ -1,18 +1,9 @@
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 window.onload = () => {
-    let link_aboutme = document.getElementById('link_aboutme');
     let link_contacts = document.getElementById('link_contacts');
     let link_contacts2 = document.getElementById('link_contacts2');
     let link_project = document.getElementById('link_project');
-    
-    link_aboutme.onclick = (e) => {
-        triggerMenu();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-    };
 
     link_project.onclick = (e) => {
         triggerMenu();
